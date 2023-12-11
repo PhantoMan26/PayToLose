@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+}
+body{
+    background-color: black;
+    width: 100vw;
+}
+header{
+    height: 100vh;
+    background-image: url(img/);
+}
+.header{
+    height: 100vh;
+    position: relative;
+}
+.header-img{
+    display: flex;
+    justify-content: center;
+}
+header img{
+    height: 10vh;
+    width: auto;
+    transition: width 0.5s, height 0.5s ease-in-out;
+    cursor: pointer;
+}
+header img:hover{
+    height: 12vh;
+    width: auto;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    color: white;
+    list-style-type: none;
+    display: inline;
+    margin: 2vh;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container{
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+.image-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: auto;
+}
+.image{
+    height: 100vh;
+    width: 20vw;
+    transition: 0.3s ease-in-out;
+    overflow-y: hidden;
+    align-items: center;
+    text-align: center;
+}
+.image img{
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+}
+.image:hover{
+    transform: scaleX(1);
+    width: 30%;
+}
+.img-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+	background-color: rgba(0,0,0,0.4);
+	display: none;
+	transition: 0.3s ease-in-out;
+}
+.img-text:hover{
+    display: contents;
+}
+@media only screen and (max-width: 810px) {
+    .container{
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    .image-container{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image{
+        height: 20vh;
+        width: 100vw;
+        transition: 0.3s ease-in-out;
+        overflow-y: hidden;
+        align-items: center;
+        text-align: center;
+    }
+    .image img{
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100vw;
+        padding: 0;
+    }
+    .image:hover{
+        transform: scaleY(1);
+        height: 30vh;
+        width: 100vw;
+    }
+    .img-text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:100%;    
+        height:100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0,0,0,0.4);
+        display: none;
+        transition: opacity 0.6s;
+    }
+    .img-text:hover{
+        display: contents;
+    }
+}
+.videos{
+    height: 100vh;
+}
